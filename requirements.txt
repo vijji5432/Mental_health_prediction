@@ -1,0 +1,11 @@
+pandas
+numpy
+scikit-learn
+joblib
+streamlit
+shap
+matplotlib
+seaborn
+gradio  # (Optional, if you want an alternative UI)
+xgboost  # (Optional, if trying additional models)
+torch  # (Optional, if experimenting with neural networks)
