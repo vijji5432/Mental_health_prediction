@@ -15,12 +15,10 @@ This project develops a self-analysis mental health prediction model using machi
 📁 mental_health_project
 ├── 📄 README.md                <- Project documentation (this file)
 ├── 📄 requirements.txt         <- Required dependencies
-├── 📄 mental_health_analysis.ipynb <- Google Colab notebook for model training
-├── 📄 streamlit_ui.py          <- Streamlit-based web UI
-├── 📄 predict_mental_health.py <- Command-line script for model inference
+├── 📄 model_training.ipynb <- Google Colab notebook for model training
+├── 📄 mental_health_ui.py          <- Streamlit-based web UI
+├── 📄 predict_using_CLI.py <- Command-line script for model inference
 ├── 📄 mental_health_model.pkl  <- Saved trained model
-├── 📄 LLM_experimentation.pdf  <- (Optional) Report on LLM explanations
-└── 🎥 demo.mp4                 <- Video walkthrough
 ```
 
 ## 🛠 Installation
@@ -28,8 +26,8 @@ To set up the project, follow these steps:
 
 1️⃣ **Clone the repository:**
 ```bash
-git clone https://github.com/yourusername/mental_health_project.git
-cd mental_health_project
+git clone https://github.com/vijji5432/mental_health_prediction.git
+cd mental_health_prediction
 ```
 
 2️⃣ **Create a virtual environment (Optional but recommended):**
@@ -48,13 +46,13 @@ pip install -r requirements.txt
 ### 🔹 **Run Streamlit UI**
 Launch the interactive UI for mental health assessment:
 ```bash
-streamlit run streamlit_ui.py
+streamlit run mental_health_ui.py
 ```
 
 ### 🔹 **Run Inference via CLI**
 Use the command-line script for predictions:
 ```bash
-python predict_mental_health.py
+python predict_using_CLI.py
 ```
 Follow the prompts to enter your details and receive predictions.
 
@@ -63,8 +61,6 @@ Follow the prompts to enter your details and receive predictions.
 - Metrics: **Accuracy, Precision, Recall, F1-score**
 - Feature importance analyzed using **SHAP**
 
-## 🎥 Video Demonstration
-Watch the walkthrough of the project: [`demo.mp4`]
 
 ## 🏗 Future Improvements
 - Experiment with other models (XGBoost, Neural Networks)
